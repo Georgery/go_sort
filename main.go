@@ -8,13 +8,18 @@ import (
 )
 
 func main() {
-	x := rand_int(10000)
+	x := rand_int(1000000)
+
+	// start := time.Now()
+	// sort.Bubble(x)
+	// this_took := time.Since(start)
+	// fmt.Println("Bubble Sort took:", this_took)
 	// fmt.Println(x)
 
 	start := time.Now()
-	sort.Bubble(x)
+	sort.Dac(x)
 	this_took := time.Since(start)
-	fmt.Println("Bubble Sort took:", this_took)
+	fmt.Println("Dac Sort took:", this_took)
 	// fmt.Println(x)
 }
 
